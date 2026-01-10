@@ -1,0 +1,24 @@
+.form_header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.form_container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.form_container-sign-field {
+    display: flex;
+    flex-direction: column;
+}
+
+#form_container-result {
+    list-style-type: none;
+    
+    
+
+}
