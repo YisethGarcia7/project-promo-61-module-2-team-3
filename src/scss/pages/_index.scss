@@ -1,19 +1,59 @@
 @use '../core/variables' as vars;
 
 .logo{
-  width: 250px;
+  width: 600px;
   
 }
 h1{
   font-family: vars.$font-main;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: vars.$color-secondary;
+  
 }
 h3 {
   font-family: vars.$font-secondary;
   font-size: 1.5rem;
  
 }
+
+.page__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+ 
+  .page__main--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    @media screen and (max-width: 736px) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    }
+  }  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    justify-content: center;
+    gap: 3rem;
+     /* Tablet */
+    @media screen and (max-width: 736px) {
+    gap: 0rem;
+    width: 70%;
+
+    }
+    
+   
+  }
+ 
+}
+
 .mockups {
   display: flex;
   flex-direction: column;
@@ -21,23 +61,8 @@ h3 {
   padding: 1rem;
   margin: 1rem;
 }
-.page__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  .page__main--text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }  
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-  }
-}
+
+
   .button-style {
     display: flex;
     align-items: center;
@@ -53,17 +78,14 @@ h3 {
     border-radius: 40px;
     cursor: pointer;
     &:hover {
-      background-color: vars.$color-primary-dark;
+      background-color: vars.$color-secondary-dark;
       color: white;
+      width: 260px;
+      height: 70px;
     }
     }
   
-  .hover {
-    :hover {
-      background-color: vars.$color-secondary-light;
-      color: white;
-      border-radius: 40px;
-  }}
+  
   
   
  
